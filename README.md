@@ -20,7 +20,7 @@ Reference: https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challeng
 # Plan of Action
 - **Data Cleaning**: Text data always requires rigorous cleaning and should be formatted to fit our model's input requirements
 - **Model selection**: Determining the appropriate models for this data set. We intend to implement four different models.
-    1. Logistic Regression
+    1. Multinomial Logistic Regression
     2. Multinomial Naive Bayes model
     3. RNNs model etc
 - **Analysing results**: In Kaggle website, this competiton is scored based on accurcay and ROC & AUC scores. Hene, we decided to use accuracy and ROC&AUC scores as quality metrics.
