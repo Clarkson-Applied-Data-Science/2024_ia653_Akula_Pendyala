@@ -199,23 +199,41 @@ Accuracy is the go-to metric when it comes to classification problems. But not i
 
 Metrics like **ROC_AUC score** and **precision recall curve** comes in handy when it comes to leveraging performance of models whose datsets are unbalanced. Hence we decided to use ROC_AUC scores of models to compare it's performance.
 ## Classification Reports
-- For Naive Bayes model with Binary count vectorizer
+- **For Naive Bayes model with Binary count vectorizer**:
+
+    For this model, we can observe that the roc_auc score is better and has a good accuracy. But this model fails to predict threat class correctly.same goes for classes - severe_toxic and identity_hate.
 
     ![MNB_bin_cr](media/MNB_bin_cr.png)
-- For Naive Bayes model with Tf-Idf count vectorizer
+- **For Naive Bayes model with Tf-Idf count vectorizer:**
+
+    This model has zero F1-score for classes - severe_toxic, threat and identity_hate. But we can observe it has higher accuarcy than previous model. This behaviour can be attributed to the dataset being imbalanced. 
 
     ![MNB_tfidf_cr](media/MNB_tfidf_cr.png)
-- For Logistic Regression model with Binary count vectorizer
+- **For Logistic Regression model with Binary count vectorizer:**
 
+    Logistic Regression model outperforms the previous two models in ROC_AUC score. It also makes good prediction on classes the two models before failed to predict.
     ![LR_bin_cr](media/LR_bin_cr.png)
-- For Logistic Regression model with Tf-Idf vectorizer
+- **For Logistic Regression model with Tf-Idf vectorizer:**
+
+    Of all four models trained so far, this model works the best. It has near perfect ROC_AUC score, takes all classes into consideration and has better accuracy.
 
     ![LR_tfidf_cr](media/LR_tfidf_cr.png)
+- **For RNN model**
 
-# Improvements
+    ![LR_tfidf_cr](media/RNN_cr.png)
+## ROC scores comparison
+![ROC_comparison](media/ROC_comp.png)
+
+## Classwise metrics comparison for each model
+![ROC_comparison](media/classwise_p1.png)![ROC_comparison](media/classwise_p2.png)
+
+## ROC curve plots for each model
+![ROC_comparison](media/plot_1.png)
+![ROC_comparison](media/plot_2.png)
+
+# Improvements and Going Furthur
 - Better data gives better results. These models could work much better if we have more minority class data.
-- We can improve on the RNN model incorporated using more layers and rigorous hyper parameter tuning.
-# Going Furthur
+- We can improve on the RNN model incorporated using more layers and rigorous hyper parameter tuning. We can also use transformer based models like encoders for classification tasks.
 
 
 
