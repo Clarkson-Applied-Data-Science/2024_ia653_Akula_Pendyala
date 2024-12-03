@@ -1,6 +1,6 @@
 # Team Members:
 - Durga Venkata Vamsi Akula - 0993203
-- Dinesh Pendyala - 0999419
+- Dinesh Kumar Pendyala - 0999419
 
 # Project Title: Toxic Comment Classification Challenge
 ## Motivation:
