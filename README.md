@@ -231,6 +231,14 @@ Metrics like **ROC_AUC score** and **precision recall curve** comes in handy whe
 ![ROC_comparison](media/plot_1.png)
 ![ROC_comparison](media/plot_2.png)
 
+# Sample Test Predictions
+- The below sentence is a direct comment from the test data.
+    ![test_1](media/test_1.png)
+
+- The below two snippets are selected at random from internet.
+    ![test_2](media/test_2.png)
+    ![test_3](media/test_3.png)
+    
 # Improvements and Going Furthur
 - Better data gives better results. These models could work much better if we have more minority class data.
 - We can improve on the RNN model incorporated using more layers and rigorous hyper parameter tuning. We can also use transformer based models like encoders for classification tasks.
